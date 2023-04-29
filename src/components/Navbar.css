@@ -1,0 +1,159 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(153 27 27);
+  padding: 16px 80px;
+  box-shadow: 1px 1px 5px #fff;
+  z-index: 999;
+  position: sticky;
+  top: 0;
+}
+
+.phone {
+  display: none;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar li {
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+}
+
+.navbar li a {
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+}
+
+.navbar li a:hover,
+.navbar li a.active {
+  color: #b2d6b7;
+}
+
+.navbar li a:hover::after,
+.navbar li a.active::after {
+  content: '';
+  width: 30%;
+  background-color: #f0e4ee;
+  height: 2px;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+}
+
+.login-btn {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  background-color: #fff;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.login-btn:hover {
+  cursor: pointer;
+}
+
+.mobile {
+  color: #fff;
+  display: none;
+}
+
+@media screen and (max-width: 769px) {
+
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(153 27 27);
+    padding: 8px 40px;
+    box-shadow: 1px 1px 5px #fff;
+    position: sticky;
+    top: 0;
+    width: auto;
+  }
+
+  .mobile {
+    color: #fff;
+    display: block;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+
+  .navbar-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    top: 70px;
+    position: fixed;
+    border-radius: 4px;
+    right: 0;
+    width: 300px;
+    /*i have to change this */
+    height: 43vh;
+    background-color: rgb(153 27 27);
+    box-shadow: 0 40px 60px rgb(0, 0, 0, 0.1);
+    padding: 40px 0 0 10px;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .navbar-mobile li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+  }
+
+  .navbar-mobile li a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+  }
+
+  .navbar-mobile li a:hover,
+  .navbar-mobile li a.active {
+    color: #000;
+  }
+
+  .navbar-mobile li a:hover::after,
+  .navbar-mobile li a.active::after {
+    content: '';
+    width: 30%;
+    background-color: #fff;
+    height: 2px;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+  }
+
+  .navbar-mobile li {
+    margin-bottom: 25px;
+  }
+
+  .phone {
+    display: initial;
+    font-size: 2.5rem;
+    color: white;
+    font-weight: 700;
+    font-family: cursive;
+    background-color: #000;
+    border-radius: 5px;
+    margin-left: 1.8rem;
+  }
+
+  .logo-dp {
+    color: red;
+  }
+}

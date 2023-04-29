@@ -1,0 +1,50 @@
+.testmonial_data_set_outer {
+    background-color: maroon;
+    margin: auto;
+    padding: 3%;
+    width: 100%;
+    color: white;
+    height: 30rem;
+    border-radius: 1rem;
+}
+
+.testmonial_data_set_content {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: start;
+    width: 90%;
+}
+
+.testmonial_data_set_content h1 {
+    padding-bottom: 1rem;
+}
+
+.testmonial_data_pic img {
+    width: 23rem;
+    height: 20rem;
+    border: 1px white solid;
+    border-radius: 1rem;
+}
+
+.testmonial_data_review {
+    width: 20%;
+    line-height: 2;
+    font-size: 1.2rem;
+
+}
+
+@media screen and (max-width:900px) {
+    .testmonial_data_set_content {
+        display: block;
+        text-align: left;
+        width: 70rem;
+        padding: 1rem;
+        height: 50rem;
+    }
+
+    .testmonial_data_review {
+        padding-top: 2rem;
+        font-size: 1.5rem;
+    }
+
+}

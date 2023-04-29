@@ -1,0 +1,61 @@
+.hospital-main {
+  margin: 2rem;
+  padding-left: 3rem;
+  display: flex;
+  height: 20rem;
+}
+
+.ha-final {
+  display: flex;
+}
+
+.hospitaldiv {
+  border: 1px solid black;
+  width: fit-content;
+  box-shadow: 1px 1px 1px 1px gray;
+  border: none;
+}
+
+.img-hospital {
+  box-shadow: inset;
+}
+
+.hospital-main img {
+  width: 15rem;
+  height: 12rem;
+}
+
+.content-ls {
+  padding-left: 1rem;
+}
+
+.content-ls p {
+  font-size: 10px;
+  color: gray;
+}
+
+.tag {
+  color: #030395;
+  border: 1px solid black;
+  font-weight: 600;
+  text-decoration: none;
+  background-color: rgb(15 118 110);
+  color: white;
+  border-radius: 2rem;
+  font-size: 1rem;
+  margin-left: 4px;
+}
+
+.tag:hover {
+  opacity: 0.6;
+}
+
+.content h3 {
+  color: green;
+  text-align: left;
+}
+
+.hospital-ls {
+  display: flex;
+  justify-content: left;
+}

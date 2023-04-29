@@ -1,0 +1,18 @@
+.test {
+  background-color: white;
+  padding: 5%;
+  height: 100%;
+}
+
+.userreview {
+
+  font-size: 3rem;
+  padding: 2px;
+  color: black;
+}
+
+@media screen and (max-width:900px) {
+  .test {
+    padding: 9%;
+  }
+}

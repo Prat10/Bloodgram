@@ -1,0 +1,152 @@
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 5rem;
+  height: 60rem;
+  /* background-color: rgb(252 231 243); */
+  background-color: #707372;
+  background-attachment: fixed;
+}
+
+.contact-inside {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-form {
+  font-size: 1.2rem;
+  display: block;
+}
+
+.contact-form select {
+  height: 5.6rem;
+}
+
+.contact h1 {
+  margin-bottom: 5rem;
+  font-size: 2.5rem;
+  font-family: cabin;
+}
+
+.bd-form {
+  font-size: 50px;
+  color: red;
+}
+
+.contact-form label {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.contact-select {
+  width: 43rem;
+  display: block;
+  padding: 1rem;
+  /* background-color: #555; */
+  margin-left: 12rem;
+  border-radius: 8px;
+  box-shadow: 0.4rem 0 1.2rem 0;
+  margin-bottom: 2rem;
+  margin-top: 5rem;
+}
+
+.contact input {
+  margin-top: 5rem;
+  height: 2.5rem;
+  display: block;
+  padding: 1.5rem;
+  width: 40rem;
+  border-radius: 5px;
+  border-style: none;
+  box-shadow: 0.4rem 0 1.2rem 0;
+  border: 1px solid #e4e6e8;
+  transition: 0.1s ease;
+  margin-bottom: 3rem;
+  border: 1px solid #aaa;
+  /* box-shadow: 0 0 1px #fff; */
+}
+
+.contact input:hover {
+  border-color: #555;
+}
+
+.contact-submit {
+  text-align: center;
+}
+
+@media screen and (max-width: 769px) {
+  .contact {
+    justify-content: center;
+    height: auto;
+    background-color: #707372;
+    width: auto;
+    margin: auto;
+  }
+
+  .contact-inside {
+    display: block;
+  }
+
+  .contact-form select {
+    height: 5.2rem;
+  }
+
+  .contact-form {
+    font-size: 0.7rem;
+    justify-content: center;
+  }
+
+  .contact h1 {
+    margin-bottom: 3rem;
+    font-size: 2rem;
+  }
+
+  /* .contact-form label {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    display: block;
+    text-align: left;
+  } */
+
+  .contact-select {
+    width: 28rem;
+    display: block;
+    padding: 1rem;
+    height: 5rem;
+    border: 1px solid #e4e6e8;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    margin-left: 0;
+  }
+
+  .contact input {
+    display: block;
+    height: 2rem;
+    width: 25rem;
+    padding: 1.4rem;
+    border-radius: 5px;
+    border-style: none;
+    border: 1px solid #e4e6e8;
+    transition: 0.1s ease;
+    margin-bottom: 3rem;
+    border: 1px solid #aaa;
+    /* box-shadow: 0 0 1px #fff; */
+  }
+
+  .contact input:hover {
+    border-color: #555;
+  }
+
+  .contact-submit {
+    text-align: center;
+  }
+
+  .contact button:hover {
+    background-color: rgb(115, 1, 1);
+    color: white;
+  }
+
+}

@@ -1,0 +1,146 @@
+.profile-main {
+    display: block;
+}
+
+.profile-top {
+    height: 30rem;
+    /* background-image: url('https://images.unsplash.com/photo-1615461066841-6116e61058f4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=983&q=80');
+    background-size: 100%; */
+    /* background-color: #7B0112; */
+    display: flex;
+    background-repeat: no-repeat;
+    padding-top: 5rem;
+    justify-content: space-between;
+}
+
+.separate-profile {
+    width: 120rem;
+    margin-left: 18%;
+    height: 0.2rem;
+    opacity: 0.3;
+    background-color: black;
+}
+
+.Logout-profile {
+    height: 5rem;
+    width: 13rem;
+    cursor: pointer;
+    margin-right: 4rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    border: none;
+    color: white;
+    font-family: 'cabin';
+    background-color: #2b3f53;
+    transition: all 2s ease-in;
+}
+
+.profile-top1 {
+    display: block;
+    margin-right: 16rem;
+}
+
+.profile-top1 h1 {
+    margin-right: 6rem;
+    font-size: 2.1rem;
+    color: red;
+}
+
+.donate-user span {
+    font-size: 7rem;
+    color: black;
+}
+
+.donate-user {
+    margin-top: 6rem;
+}
+
+.profile-bottom {
+    background-color: white;
+    height: 40rem;
+    display: flex;
+    justify-content: space-around;
+    border-top: 1rem black;
+    margin-left: 9rem;
+}
+
+.profile-bottom h1 {
+    text-align: left;
+}
+
+.profile-bottom1 {
+    display: block;
+    margin-top: 3rem;
+
+}
+
+.social-profile {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.social-profile .social-pro {
+    margin-right: 2rem;
+    margin-top: 2rem;
+    color: white;
+}
+
+.profile-bottom1 input {
+    border: none;
+    font-size: 2rem;
+    text-align: start;
+    margin-top: 2rem;
+    height: 4rem;
+    width: 40rem;
+    border-radius: 0.8rem;
+}
+
+.profile-bottom2 input {
+    border: none;
+    font-size: 2rem;
+    text-align: end;
+    background-color: beige;
+    text-align: start;
+    /* box-shadow: 0 0 0.2rem 0; */
+    margin-top: 2rem;
+    height: 4rem;
+    border-radius: 0.8rem;
+    width: 40rem;
+}
+
+.profile-btn {
+    margin-top: 4rem;
+    background-color: #00aa9d;
+    font-family: cabin;
+    font-size: 1.8rem;
+    color: white;
+    border: none;
+    box-shadow: 0 0 0 0.1rem whitesmoke;
+    height: 4rem;
+    width: 16rem;
+}
+
+.profile-bottom2 {
+    display: block;
+    margin-top: 3rem;
+}
+
+.profile-bottom2 input {
+    text-align: center;
+}
+
+.img-section {
+    margin-left: 35rem;
+    padding: 2rem;
+    height: 15rem;
+    width: 20rem;
+    justify-content: center;
+    margin-top: 4rem;
+
+}
+
+.profile-img {
+    height: 15rem;
+    width: 16rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}

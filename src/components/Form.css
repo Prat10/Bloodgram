@@ -1,0 +1,150 @@
+.Contactus {
+    padding-top: 7rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.contactusform input {
+    cursor: pointer;
+    border: 2px solid brown;
+
+}
+
+.inputdiv {
+    display: flex;
+    gap: 1rem;
+}
+
+.inputdiv input {
+    display: block;
+    padding: 1.5rem;
+    width: 35rem;
+    border-radius: 5px;
+    border-style: none;
+    border: 1px solid #e4e6e8;
+    transition: 0.1s ease;
+    margin-bottom: 3rem;
+    border: 1px solid #aaa;
+}
+
+.secondinput {
+    display: block;
+    padding: 1.5rem;
+    width: 75rem;
+    border-radius: 5px;
+    border-style: none;
+    border: 1px solid #e4e6e8;
+    transition: 0.1s ease;
+    margin-bottom: 3rem;
+    border: 1px solid #aaa;
+}
+
+.secondinput1 {
+    display: block;
+    padding: 1.5rem;
+    height: 20rem;
+    width: 50rem;
+    border-radius: 5px;
+    border-style: none;
+    border: 1px solid #e4e6e8;
+    transition: 0.1s ease;
+    margin-bottom: 3rem;
+    border: 1px solid #aaa;
+}
+
+.contactinfo {
+    line-height: 2.5rem;
+    padding-right: 10rem;
+}
+
+.contactinfo h1,
+.contactusform h1 {
+    padding-bottom: 3.5rem;
+    font-weight: 700;
+    text-align: center;
+    font-size: 2.5rem;
+
+}
+
+.contactinfo p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding-left: 12rem;
+
+}
+
+.sendmessage {
+    padding: 1rem;
+    width: 15rem;
+    background-color: maroon;
+    color: #fff;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 1rem;
+    font-weight: 500;
+    align-items: center;
+    margin-left: 13rem;
+    margin-top: 1rem;
+}
+
+.sendmessage:hover {
+    background-color: transparent;
+    border: 2px solid maroon;
+    color: black;
+}
+
+.contactinfo .formicon {
+    color: maroon;
+    /* width: 4rem; */
+    font-size: 3.5rem;
+    border: 1px solid brown;
+    padding: 6px;
+    border-radius: 4rem;
+
+
+
+}
+
+.iconflex {
+    display: flex;
+    padding-bottom: 2rem;
+}
+
+.formicon3 {
+    margin-right: -10rem;
+
+}
+
+@media screen and (max-width:700px) {
+    .contactusform {
+        /* margin-left:1rem; */
+    }
+
+    .inputdiv {
+        display: block;
+
+
+    }
+
+    .secondinput {
+        width: 30rem;
+    }
+
+    .sendmessage {
+        margin-left: 5rem;
+        font-size: 1.5rem;
+        margin-bottom: 6rem;
+    }
+
+    .contactinfo {
+        margin-bottom: 3rem;
+    }
+}
+
+@media screen and (max-width:1100px) {
+    .contactinfo {
+        margin-top: 3rem;
+    }
+}

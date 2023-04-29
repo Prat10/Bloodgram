@@ -1,0 +1,46 @@
+.card-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.c-inner-wrapper {
+    background: purple;
+    padding: 0.2rem;
+    border-radius: 1.8rem;
+}
+
+.c-content {
+    background-color: black;
+    border-radius: 1.8rem;
+    padding: 1.8rem;
+}
+
+.c-banner {
+    border-radius: 1.8rem;
+    height: 30rem;
+    width: 30rem;
+}
+
+.c-userinfo {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.c-ui-left div {
+    margin-top: 1rem;
+}
+
+.c-name-colors {
+    color: white;
+}
+
+@media screen and (max-width:769px) {
+    .c-banner {
+        border-radius: 1.8rem;
+        height: 20rem;
+        width: 20rem;
+    }
+
+}
