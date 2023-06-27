@@ -10,7 +10,6 @@ import Login from './components/Login';
 import Navbar from './components/Navbar';
 import Aboutus from './routes/Aboutus';
 import Final from './redirect/Final';
-import Hospitals from './Hospital/HospitalFinal';
 import Signup from './components/Signup';
 import Form from './components/Form';
 import UserReview from './components/UserReview';
@@ -37,7 +36,6 @@ root.render(
             path='/availableusers/hospitals'
             element={<Navigate to='/hospitals' />}
           />
-          <Route path='hospitals' element={<Hospitals />} />
         </Route>
         <Route path='Login' element={<Login />} />
         <Route path='signup' element={<Signup />} />
