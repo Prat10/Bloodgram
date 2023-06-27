@@ -6,7 +6,9 @@ import {
   BsFillGeoAltFill,
   BsFillTelephoneFill,
 } from 'react-icons/bs';
+
 const App = (props) => {
+  console.log(props)
   // const [show, setshow] = useState(false);
   return (
     <div className='user-main'>

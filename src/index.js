@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 
 import './index.css';
 import Home from './routes/Home';
-import Donate from './routes/Donate';
+// import Donate from './routes/Donate';
 import Donaters from './routes/Donaters';
 import Login from './components/Login';
 import Navbar from './components/Navbar';
@@ -15,6 +15,7 @@ import Signup from './components/Signup';
 import Form from './components/Form';
 import UserReview from './components/UserReview';
 import Profile from './components/Profile';
+import Information from './routes/Information';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -25,7 +26,8 @@ root.render(
           <Route path='/' element={<Navigate to='/home' />} />
 
           <Route path='home' element={<Home />} />
-          <Route path='donate' element={<Donate />} />
+          {/* <Route path='donate' element={<Donate />} /> */}
+          <Route path='donate' element={<Information />} />
           <Route path='donaters' element={<Donaters />} />
           <Route path='reviews' element={<UserReview />} />
           <Route path='aboutus' element={<Aboutus />} />

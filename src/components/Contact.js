@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
-import Button from './Button';
 import './Contact.css';
 import { useNavigate } from 'react-router-dom';
+import user_data from '../../src/redirect/List_of_user_set';
+import FilterUsers from '../../src/redirect/App'
+
 const Form = () => {
+  const [users, setUsers] = React.useState([])
 
   const navigate = useNavigate();
   const navigating = () => {
@@ -20,13 +23,32 @@ const Form = () => {
       ...formData,
       [event.target.name]: event.target.value,
     });
-
   const { name, blood, number, city } = formData;
+  
+  // const handleClick = async (e) => {
+  //   e.preventDefault();
+    
+  // };
+
+  const filterItems = (event) => {
+    event.preventDefault();
+    console.log(formData)
+    const newItems = user_data.filter((item) => item.blood === formData.blood);
+    setUsers(newItems);
+    navigating()
+  };
+
+  const dataElements = users.map((el) => {
+    return <FilterUsers key={el.id} data={el} />;
+  });
+
+
 
   return (
     <div className='contact' id='take'>
-      <h1><span className='bd-form'>C</span>heck Your City for Blood</h1>
-      <form className='contact-form'>
+      <h1>
+        <span className='bd-form'>C</span>heck Your City for Blood</h1>
+      <form className='contact-form' onSubmit={filterItems}>
         <div className='contact-inside'>
           <input
             value={formData.name}
@@ -89,10 +111,15 @@ const Form = () => {
             <option>Other</option>
           </select>
         </div>
+        <button className='contact-submit' type='submit' >Check Blood</button>
+        {/* <div className='contact-submit'>
+        <button onClick={handleClick}>Check Blood</button>
+
+      </div> */}
       </form>
-      <div className='contact-submit'>
-      </div>
-      <Button />
+      
+
+      
     </div>
   );
 };

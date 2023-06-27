@@ -31,7 +31,7 @@ export default function Signup() {
             })
         });
         const data = await res.json();
-
+        console.log(data);
         if (data.status === 422 || !data) {
             window.alert("Invalid Registration");
             console.log("Invalid Registration");
@@ -49,46 +49,25 @@ export default function Signup() {
                 <h1>Welcome to Blood Community</h1>
                 <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/28289891808095.5e3b23bb72c55.jpg" />
             </div>
-
-            {/* <h1>
-                For Login Credentials
-                
-            </h1> */}
             <div className="signup1">
                 <form method="POST">
                     <div className="signup-main">
                         <div className="signup-main1">
-
-                            <div className="nameic">
-                                <HiUser className="icons" />
                                 <input type="text" name="name"
                                     placeholder="FullName"
                                     value={user.name}
-                                    onChange={handleInputs} />
-                            </div>
-                            <div className="nameic">
-                                <AiOutlineMail className="icons" />
+                                    onChange={handleInputs}/>
                                 <input type="email" name="email" placeholder="Enter the Email"
                                     value={user.email}
                                     onChange={handleInputs} />
-                            </div>
-
-                            <div className="nameic">
-                                <AiFillPhone className="icons" />
                                 <input type="number" name="phone" placeholder="Mobile No."
                                     value={user.phone}
                                     onChange={handleInputs} />
-                            </div>
-                            <div className="nameic">
-                                <RiLockPasswordFill className="icons" />
                                 <input type="text" name="password" placeholder="Password"
                                     value={user.password}
                                     onChange={handleInputs} />
-                            </div>
-
                         </div>
                         <div className="signup-main2">
-
                             <select value={user.blood}
                                 name="blood"
                                 onChange={handleInputs}>
@@ -117,21 +96,10 @@ export default function Signup() {
                                 name="age"
                                 onChange={handleInputs}>
                             </input>
-
-
-
                             <input type="number" placeholder="Enter your Weight /kg" className="start"
                                 value={user.weight}
                                 name="weight"
                                 onChange={handleInputs} />
-
-                            {/* <label>
-                                Last Date Donation(optional)
-                                <input type="date" className="start"
-                                    value={user.donationdate}
-                                    name="donationdate"
-                                    onChange={handleInputs} />
-                            </label> */}
                         </div>
                     </div>
                     {/* <h1>
@@ -141,7 +109,6 @@ export default function Signup() {
                     <div className="additional-info">
 
                         <select
-
                             value={user.alert}
                             onChange={handleInputs}
                             name="alert">

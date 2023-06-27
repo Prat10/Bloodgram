@@ -12,6 +12,7 @@ const Cards = (props) => {
                             <div className='c-name-colors'>{card.user_name}</div>
                             <div>{card.userhandle}</div>
                         </div>
+                        <div>{card.work}</div>
                     </div>
                 </div>
             </div>

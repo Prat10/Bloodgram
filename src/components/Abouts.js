@@ -6,7 +6,7 @@ import Cards from './OurTeamData';
 
 
 const settings = {
-  slidesToShow: 3,
+  slidesToShow: 2,
   slidesToScroll: 1,
   infinite: true,
   autoPlay: true,

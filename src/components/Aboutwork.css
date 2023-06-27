@@ -1,41 +1,38 @@
 .aboutmainpara {
-    padding: 2rem;
+    padding: 3rem;
 }
-
 .bloodp {
     text-align: center;
     font-size: 3rem;
     font-weight: 700;
     padding-top: 2rem;
 }
-
-.vission-mission hr {
-    display: none;
+.vission-mission{
+    display: flex;
+    justify-content: space-around;
+    margin-top:5rem;
 }
-
+.vission{
+   text-align: center;
+}
+.vission p{
+    padding-left: 15rem;
+    text-align: left;
+    line-height: 2;
+    font-size: 1.5rem;
+    padding-right: 12rem;
+}
+.mission p{
+    padding-left: 20rem;
+    text-align: left;  
+    line-height: 2;
+    font-size: 1.5rem;
+    padding-right: 14rem;
+}
 .bloodgramheading {
     display: flex;
-    padding-left: 7rem;
-}
-
-.vission-mission {
-    margin-left: 6rem;
-    width: fit-content;
-}
-
-.vission-mission h1 {
-    font-size: 2rem;
-    font-weight: 700;
-    padding-left: 8rem;
-    padding-bottom: 1.2rem;
-}
-
-.vission p,
-.mission p {
-    font-size: 1.5rem;
-    padding-right: 10rem;
-    padding-top: 7px;
-    line-height: 2;
+    margin-left: 20rem;
+    height: 30rem;
 }
 
 .aboutpara {
@@ -48,10 +45,16 @@
 }
 
 .content-for-about {
-    width: 60%;
+    width: 50%;
     display: block;
+    padding-bottom: 12rem;
 }
-
+.bloodgramheading img{
+    background-color: red;
+    height: 25rem;
+    width: 30rem;
+    border-radius: 3rem;
+}
 .aboutcontact {
     text-align: center;
     padding: 1rem;
@@ -69,8 +72,10 @@
     color: black;
     border-radius: 2px;
 }
-
-.vission-mission {
+.About-uper{
+    margin-top: 4rem;
+}
+/* .vission-mission {
     display: flex;
     padding: 3rem 0 3rem 16rem;
     justify-content: space-around;
@@ -79,17 +84,16 @@
     justify-content: center;
     align-items: center; */
     /* flex-direction: column; */
-}
+/* } */ 
 
-.vission-mission p {
+/* .vission-mission p {
     width: 60%;
     text-align: center;
 }
 
 .vission-mission h1 {
-    text-align: left;
-    margin-left: 5rem;
-}
+    margin-left: 0;
+} */
 
 @media screen and (max-width:769px) {
 
@@ -104,6 +108,8 @@
 
     .bloodgramheading {
         display: block;
+        height: auto;
+        margin-left:0;
         padding-left: 0;
         align-items: center;
         padding-right: 0;
@@ -111,48 +117,29 @@
     }
 
     .aboutpara {
-        padding-top: 4rem;
+        padding:0;
         font-size: 1.5rem;
         padding-left: 1rem;
         line-height: 3;
         text-align: center;
-        margin-bottom: 5rem;
+        margin-bottom: 0;
     }
-
-    .vission-mission {
+    .vission-mission{
         display: block;
-        justify-content: none;
-        padding: 0;
-        width: auto;
-        align-items: center;
-        margin: 4rem 0 0 0;
     }
-
-    .vission-mission hr {
-        display: initial;
-        margin-bottom: 3rem;
-    }
-
-    .vission {
-        height: 20rem;
+    .vission p{
+        padding-left: 1rem;
         text-align: center;
+        padding-right: 1rem;
     }
-
-    .mission {
-        height: 20rem;
+    .mission{
+        margin-top: 3rem;
     }
-
-    .vission-mission p {
+    .mission p{
+        padding-left: 1rem;
         text-align: center;
-        padding: 1rem 4rem 0 4rem;
-        width: auto;
+        padding-right: 1rem;
     }
-
-    .vission-mission .vission .mission h1 {
-        margin-left: 0;
-        text-align: center;
-    }
-
     .About-uper {
         padding-top: 1rem;
     }

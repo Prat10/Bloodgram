@@ -1,5 +1,5 @@
 .login-page {
-  background-color: whitesmoke;
+  background-color: #dde1e7;
   height: 93vh;
   width: 100vw;
   display: block;
@@ -11,24 +11,27 @@
 
 .login-page h1 {
   padding-bottom: 3rem;
-  font-family: 'giddy';
+  font-family: Poppins;
   font-size: 3rem;
 }
 
 .login-pack {
-  background-color: white;
-  background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/3c36af46773569.586396cf11c1c.jpg');
-  background-repeat: no-repeat;
+  background-color:#dde1e7;
+  /* background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/3c36af46773569.586396cf11c1c.jpg'); */
+  /* background-repeat: no-repeat; */
   background-size: 100%;
+  box-shadow: -3px -3px 7px #ffffff73,
+  2px 2px 5px rgba(94,104,121,0.288);
   margin: 0 auto;
   padding: 5rem 10rem;
+
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   width: 45rem;
   height: 40rem;
-  box-shadow: 2px 3.4px 2px 3.4px #777;
+  /* box-shadow: 2px 3.4px 2px 3.4px #777; */
   border-radius: 5px;
 }
 
@@ -36,17 +39,25 @@
 .login-page form {
   display: block;
 }
+.login-page .forget{
+  color: maroon;
+}
 
 .login-page input {
   width: 35rem;
+  background-color: #dde1e7;
+  
   opacity: 0.9;
+  box-shadow: inset 2px 2px 5px #BABECC,
+              inset -5px -5px 10px #ffffff73;
   height: 5rem;
+  outline: none;
   margin-left: 1rem;
   margin-top: 3rem;
-  border-radius: 1rem;
+  border-radius: 2.5rem;
 }
 
-.rese {
+/* .rese {
   background-color: maroon;
   width: 16rem;
   color: white;
@@ -58,13 +69,13 @@
   font-family: monterrate;
   letter-spacing: 2px;
   font-weight: 200;
-}
+} */
 
-.rese:hover {
-  background-color: rgb(190 18 60);
-  border: 2px solid maroon;
+/* .rese:hover {
+  background-color: #ffffff73;
+  border: 2px solid marborder: 2px solid maroon;
   color: black;
-}
+} */
 
 .login-page h2 {
   margin-top: 3rem;
@@ -77,16 +88,20 @@
 }
 
 .login-page .lo {
-  background-color: maroon;
-  width: 10rem;
-  height: 4rem;
+  background-color: #dde1e7;
+  color: #595959;
+  width: 35rem;
+  /* line-height: 4rem; */
+  height: 5rem;
   border: none;
-  border-radius: 1rem;
+  outline: none;
+  border-radius: 2.5rem;
   padding: 1rem;
   font-family: Poppins;
-  color: #fff;
   letter-spacing: 2px;
   font-weight: 200;
+  box-shadow: 2px 2px 5px #BABECC,
+  -5px -5px 10px #ffffff73;
   margin-top: 2rem;
   cursor: pointer;
 }
@@ -96,7 +111,6 @@
 }
 
 .lo:hover {
-  background-color: rgb(190 18 60);
   border: 2px solid maroon;
   color: black;
 }
@@ -104,25 +118,31 @@
 @media screen and (max-width:769px) {
   .login-page {
     width: auto;
-    height: auto;
+    /* background-color:#dde1e7; */
     padding-top: 3rem;
   }
 
   .login-pack {
-    background-color: #ffffff;
+    background-color:#dde1e7;
     padding: 2rem 5rem;
     width: auto;
-    height: auto;
-    box-shadow: 2px 3.4px 2px 3.4px #777;
+    margin-left:2rem;
+    margin-right:2rem;
+    box-shadow: -3px -3px 7px #ffffff73,
+    2px 2px 5px rgba(94,104,121,0.288);
     border-radius: 5px;
   }
 
   .login-page input {
     width: 24rem;
+    background-color: #dde1e7;
     height: 4rem;
     margin-left: 1rem;
+    padding: 0.5rem;
+    box-shadow: inset 2px 2px 5px #BABECC,
+              inset -5px -5px 10px #ffffff73;
     margin-top: 3rem;
-    border-radius: 1rem;
+    border-radius: 2.5rem;
   }
 
   .login-page h1 {
@@ -132,10 +152,10 @@
 
   .login-page .lo {
     background-color: maroon;
-    width: 10rem;
+    width: 24rem;
     height: 4rem;
     border: none;
-    border-radius: 1rem;
+    border-radius: 2.5rem;
     padding: 1rem;
     font-family: Poppins;
     color: #fff;
@@ -143,5 +163,9 @@
     font-weight: 200;
     margin-top: 2rem;
     cursor: pointer;
+  }
+.login-pack .login-icons{
+    height: 7rem;
+    width: 6rem;
   }
 }

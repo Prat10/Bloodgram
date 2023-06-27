@@ -1,15 +1,12 @@
 .Contactus {
-    padding-top: 7rem;
+    padding-top: 8rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-
 }
 
 .contactusform input {
-    cursor: pointer;
     border: 2px solid brown;
-
 }
 
 .inputdiv {
@@ -26,7 +23,7 @@
     border: 1px solid #e4e6e8;
     transition: 0.1s ease;
     margin-bottom: 3rem;
-    border: 1px solid #aaa;
+    border: 2px solid brown;
 }
 
 .secondinput {
@@ -38,7 +35,7 @@
     border: 1px solid #e4e6e8;
     transition: 0.1s ease;
     margin-bottom: 3rem;
-    border: 1px solid #aaa;
+    /* border: 1px solid #aaa; */
 }
 
 .secondinput1 {
@@ -46,12 +43,12 @@
     padding: 1.5rem;
     height: 20rem;
     width: 50rem;
+    overflow: hidden;
     border-radius: 5px;
     border-style: none;
     border: 1px solid #e4e6e8;
     transition: 0.1s ease;
     margin-bottom: 3rem;
-    border: 1px solid #aaa;
 }
 
 .contactinfo {
@@ -72,7 +69,6 @@
     font-size: 1.5rem;
     font-weight: 500;
     padding-left: 12rem;
-
 }
 
 .sendmessage {
@@ -85,7 +81,6 @@
     border-radius: 1rem;
     font-weight: 500;
     align-items: center;
-    margin-left: 13rem;
     margin-top: 1rem;
 }
 
@@ -102,49 +97,102 @@
     border: 1px solid brown;
     padding: 6px;
     border-radius: 4rem;
+}
 
-
-
+.uline {
+    height: 0.25rem;
+    width: 5rem;
+    background: maroon;
+    margin: 0 auto;
+    margin-top: -2rem;
+    margin-bottom: 2rem;
 }
 
 .iconflex {
     display: flex;
+    /* margin-top: 3rem; */
     padding-bottom: 2rem;
 }
 
 .formicon3 {
     margin-right: -10rem;
-
 }
 
-@media screen and (max-width:700px) {
-    .contactusform {
-        /* margin-left:1rem; */
+@media screen and (max-width:769px) {
+    .Contactus {
+        padding-top: 6rem;
+        display: block;
     }
 
-    .inputdiv {
+    .contactusform {
+        /* margin-left:1rem; */
+        width: 100%;
+    }
+
+    .inputdiv input {
         display: block;
+        padding: 1.5rem;
+        width: 17rem;
+        border-radius: 5px;
+        justify-content: center;
+        border-style: none;
+        border: 1px solid #e4e6e8;
+        transition: 0.1s ease;
+        margin-bottom: 3rem;
+        border: 2px solid brown;
+    }
 
 
+    .inputdiv {
+        display: flex;
+        justify-content: center;
     }
 
     .secondinput {
         width: 30rem;
     }
 
-    .sendmessage {
+    .secondinputdiv {
+        display: block;
+        justify-content: center;
+        margin-left: 0.9rem;
+    }
+
+    /* .sendmessage {
         margin-left: 5rem;
         font-size: 1.5rem;
         margin-bottom: 6rem;
-    }
+    } */
 
-    .contactinfo {
+    .secondinput1 {
+        display: block;
+        padding: 1.5rem;
+        height: 20rem;
+        width: 30rem;
+        overflow: hidden;
+        border-radius: 5px;
+        border-style: none;
+        border: 1px solid #e4e6e8;
+        transition: 0.1s ease;
         margin-bottom: 3rem;
     }
-}
 
-@media screen and (max-width:1100px) {
     .contactinfo {
         margin-top: 3rem;
+        width: 80%;
+        margin-bottom: 3rem;
+        display: block;
+    }
+
+    .contactinfo p {
+        font-size: 1.5rem;
+        font-weight: 500;
+        padding-left: 10rem;
     }
 }
+
+/* @media screen and (max-width:1100px) {
+    .contactinfo {
+        margin-top: 3rem;margin-top: 3rem;
+    }
+} */

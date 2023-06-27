@@ -7,7 +7,7 @@
 
 .signup-left {
     height: 75rem;
-    width: 55%;
+    width: 50%;
     /* background-image: linear-gradient(rgba(34, 34, 34, 0.6),
             rgba(34, 34, 34, 0.6)),
         url('https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/3c36af46773569.586396cf11c1c.jpg');
@@ -19,7 +19,8 @@
 
 .signup-left img {
     margin-top: 3rem;
-    width: 60rem;
+    box-shadow: 2px 2px 5px #BABECC;
+    width: 50rem;
     height: 50rem;
     border-radius: 2rem;
     /* box-shadow: 0.5rem 1rem 1rem 1rem; */
@@ -27,12 +28,12 @@
 
 .signup1 {
     /* border-left: 0.4rem solid black; */
-    width: 40%;
+    width: 46%;
+    background-color: #dde1e7;
     float: right;
     border-radius: 0.5rem;
-    padding-left: 2rem;
     margin-right: 5rem;
-    margin-top: 3rem;
+    margin-top: 1rem;
     /* background-image: linear-gradient(rgba(34, 34, 34, 0.6),
             rgba(34, 34, 34, 0.6)),
         url('https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/3c36af46773569.586396cf11c1c.jpg');
@@ -41,8 +42,13 @@
 
 }
 
-.signup-main1 {
+.signup-main1 input{
     margin-right: 5rem;
+    outline:none;
+    border:none;
+    margin-top: 2rem;
+    box-shadow: inset 2px 2px 5px #BABECC,
+              inset -5px -5px 10px #ffffff73;
 }
 
 
@@ -56,26 +62,23 @@
 
 }
 
-.signup input,
-label {
-    display: block;
-}
-
-.signup label {
-    text-align: left;
-    font-size: medium;
-}
-
 .signup h3 {
     font-size: medium;
+    color:maroon;
 }
 
 .signup-main {
     display: flex;
+    padding-left:2rem;
 }
 
 .signup-main2 input {
     margin-top: 2rem;
+    outline:none;
+    border:none;
+    box-shadow: inset 2px 2px 5px #BABECC,
+              inset -5px -5px 10px #ffffff73;
+
 }
 
 .start {
@@ -83,9 +86,9 @@ label {
 }
 
 .signup form {
-    margin-top: 5rem;
+    margin-top: 2rem;
     display: block;
-    justify-content: space-around;
+    /* justify-content: space-around; */
 }
 
 .signup input {
@@ -96,18 +99,26 @@ label {
     border-radius: 0.3rem;
     font-size: medium;
     font-weight: 600;
+    outline:none;
+    border:none;
+    box-shadow: inset 2px 2px 5px #BABECC,
+              inset -5px -5px 10px #ffffff73;
 }
 
 .privacy {
     display: flex;
     margin-top: 1rem;
     align-items: center;
-    margin-left: 0.4rem;
+    margin-left: 2rem;
 }
 
 .privacy input {
     width: 2rem;
     margin-right: 4px;
+    box-shadow:none;
+    margin-bottom:1rem;
+    outline:none;
+    border:none;
 }
 
 .nameic {
@@ -119,7 +130,9 @@ label {
     margin-top: 2rem;
     margin-bottom: 0.5rem;
 }
-
+.additional-info{
+    padding-left:2rem;
+}
 .additional-info input {
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
@@ -130,15 +143,17 @@ label {
 }
 
 .sign {
-    background-color: maroon;
-    border-radius: 1rem;
-    width: 10rem;
+    border-radius: 2rem;
+    background-color: #dde1e7;
+    width: 30rem;
     height: 4rem;
     border: none;
     font-family: Poppins;
-    color: #fff;
+    color: #595959;
     letter-spacing: 2px;
     font-weight: 200;
+    box-shadow: 2px 2px 5px #BABECC,
+  -5px -5px 10px #ffffff73;
     margin-bottom: 2rem;
     margin-top: 2rem;
     cursor: pointer;
@@ -146,7 +161,7 @@ label {
 }
 
 .sign:hover {
-    background-color: rgb(190 18 60);
+
     border: 2px solid maroon;
     color: black;
 }
@@ -174,9 +189,11 @@ select {
     margin-top: 2rem;
     margin-bottom: 0.3rem;
     text-align: center;
-    border: 3px solid maroon;
+    border: none;
     font-size: medium;
     font-weight: 600;
+    box-shadow: inset 2px 2px 5px #BABECC,
+              inset -5px -5px 10px #ffffff73;
     opacity: 0.5;
     color: maroon;
 }
@@ -189,37 +206,64 @@ select {
 @media screen and (max-width: 769px) {
 
     .signup {
-        width: 100%;
+        background-color: #dde1e7;
+    }
+    .signup-left{
+        display:none;
+    }
+    .signup1{
+        width:auto;
+        float:none;
+        justify-content:center;
+        align-items:center;
+        margin-top: 0;
+        margin-right:0;
+    }
+    .signup-main{
+        display:block;
+    }
+    .signup-main1{
+        margin-left:4rem
+    }
+    .signup-main2{
+        margin-left:4rem
+    }
+    .signup-main1 input{
+        margin-top:2rem;
     }
 
     .signup form {
         display: block;
-        margin-top: 2rem;
+        margin-top: 0;
+        justify-content:center;
+        align-items:center;
     }
 
     .signup input {
         width: 28rem;
         height: 3.5rem;
         border-radius: 0.3rem;
-        border: 2px solid maroon;
         font-size: medium;
+        box-shadow: inset 2px 2px 5px #BABECC,
+        inset -5px -5px 10px #ffffff73;
         font-weight: 600;
     }
 
-    .nameic {
+    /* .nameic {
         display: flex;
         margin-left: 1rem;
         align-items: center;
         background-color: maroon;
         border: 1px solid;
         width: 33rem;
+    } */
+.additional-info{
+        margin-left:4rem
     }
-
     .signup select {
         width: 28rem;
         height: 3.5rem;
         text-align: center;
-        border: 4px solid maroon;
         font-size: medium;
         font-weight: 600;
         color: maroon;
@@ -240,15 +284,24 @@ select {
     }
 
     .sign {
-        background-color: rgb(2 132 199);
-        width: 7rem;
+        background-color: #dde1e7;
+        width: 20rem;
         height: 4rem;
         border-radius: 3px;
+        box-shadow: 2px 2px 5px #BABECC,
+  -5px -5px 10px #ffffff73;
         font-family: Poppins;
         color: black;
-        letter-spacing: 2px;
+        /* letter-spacing: 2px; */
         font-weight: 200;
         margin-bottom: 2rem;
         cursor: pointer;
     }
 }
+.privacy {
+    display: flex;
+    margin-top: 1rem;
+    align-items: center;
+    margin-left: 6rem;
+}
+

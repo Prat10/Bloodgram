@@ -5,7 +5,7 @@ const List_of_user_set = [
     location: 'Asansol west Bengal',
     phone: 8279821731,
     img: "https://imgs.search.brave.com/Qy68j2UtaJIAq4lmlI9qxi7XYbStRPzBCuAqutXfYGg/rs:fit:416:416:1/g:ce/aHR0cHM6Ly9zcGVj/aWFscy1pbWFnZXMu/Zm9yYmVzaW1nLmNv/bS9pbWFnZXNlcnZl/LzViZTBkY2RhNGJi/ZTZmNzhiZGE3MGJj/My80MTZ4NDE2Lmpw/Zz9iYWNrZ3JvdW5k/PTAwMDAwMCZjcm9w/WDE9MTU1JmNyb3BY/Mj0xODExJmNyb3BZ/MT0xMDMmY3JvcFky/PTE3NTk",
-    blood: 'B+',
+    blood: 'A+',
   },
   {
     name: 'Rahul sarkar ',
@@ -19,7 +19,7 @@ const List_of_user_set = [
     location: 'Asansol college road west Bengal',
     phone: 8279889731,
     img: "https://imgs.search.brave.com/yBRXXjIcuqKt9HLM9_TYh7Q6MyilWMRBQXyNGzL-NY0/rs:fit:200:200:1/g:ce/aHR0cHM6Ly9kb2N0/aWZ5LmNvbS9wdWJs/aWMvaW1hZ2VzL2F0/aGVuYS11ay9wcmFj/dGljZS9pbWFnZXMv/ZHJfbmlrX3NoYXJt/L2RyX25pa19zaGFy/bS4wLmpwZ19sZy5q/cGc",
-    blood: 'B+',
+    blood: 'A+',
   },
   {
     name: 'Prity Sharma',

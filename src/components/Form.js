@@ -8,7 +8,6 @@ import { HiOutlineLocationMarker } from "react-icons/hi";
 const Form = () => {
     return (
         <div className='Contactus'>
-
             <div className='contactusform'>
                 <h1>Contact Us Form</h1>
                 <div className='inputdiv'>
@@ -19,14 +18,16 @@ const Form = () => {
                     <input type="text" placeholder="Phone" required ></input>
                     <input type="text" placeholder="Address" required ></input>
                 </div>
+                <div className="secondinputdiv">
+                    <input type="text" placeholder="Subject" className='secondinput'></input>
+                    <input type="text" placeholder="Message" className='secondinput1' required></input>
+                    <button className='sendmessage'>Send Message</button>
+                </div>
 
-                <input type="text" placeholder="Subject" className='secondinput'></input>
-                <input type="text" placeholder="Message" className='secondinput1' required></input>
-                <button className='sendmessage'>Send Message</button>
             </div>
             <div className='contactinfo'>
                 <h1> Contact Info</h1>
-
+                <div className="uline"></div>
                 <div className='iconflex'>
                     <div className='formicon3'>
                         <p><MdOutlineAlternateEmail className='formicon' /></p>
@@ -63,8 +64,6 @@ const Form = () => {
                         <p>Kalipure ,West Bengal</p>
                     </div>
                 </div>
-
-
             </div>
 
         </div>

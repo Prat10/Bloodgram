@@ -15,7 +15,6 @@ function UserReview() {
         if (number < 0) {
             return people.length - 1;
         }
-
         return number;
     };
 
@@ -33,14 +32,14 @@ function UserReview() {
         });
     };
 
-    const randomPerson = () => {
-        let numberRandom = Math.floor(Math.random() * (people.length - 1));
-        if (numberRandom === index) {
-            numberRandom = numberRandom + 1;
-        }
-        console.log(numberRandom);
-        return setIndex(numberRandom);
-    };
+    // const randomPerson = () => {
+    //     let numberRandom = Math.floor(Math.random() * (people.length - 1));
+    //     if (numberRandom === index) {
+    //         numberRandom = numberRandom + 1;
+    //     }
+    //     console.log(numberRandom);
+    //     return setIndex(numberRandom);
+    // }
 
     return (
         <main className="reviewhoon">
@@ -50,7 +49,7 @@ function UserReview() {
                     <div className="underline"></div>
                 </div>
 
-                <article className="review">
+                <div className="review">
                     <div className="img-container">
                         <img src={image} alt={name} className="person-img" />
                         <span className="quote-icon">
@@ -75,7 +74,7 @@ function UserReview() {
                     {/* <button className="random-btn" onClick={randomPerson}>
                         surprise me
                     </button> */}
-                </article>
+                </div>
             </section>
         </main>
     );

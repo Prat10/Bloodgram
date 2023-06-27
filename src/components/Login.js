@@ -16,23 +16,25 @@ function Login() {
       headers: {
         "Content-Type": "application/json"
       },
-      body: JSON.stringify({
+      body:JSON.stringify({
         email,
         password
       })
     });
+    console.log(res);
     const data = await res.json();
+    console.log(data);
+    console.log(data.status)
     if (res.status === 400 || !data) {
-      window.alert("Invalid Credentials");
+      window.alert("Invalid Credntials");
     }
     else {
-      window.alert("Login Successfully");
       navigate("/yourProfile");
     }
   }
   return (
     <div className='login-page'>
-      <h1>Login Credentials</h1>
+      <h1>Login</h1>
       <div className='login-pack'>
         <BsPersonCircle className='login-icons' />
         <form method='POST'>
@@ -46,12 +48,14 @@ function Login() {
             <input
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              placeholder='Enter Your Password' />
+              placeholder='Enter Your Password'>
+              </input>
           </label>
-          <button type='onSubmit' className='lo' onClick={loginUser}>LOGIN</button>
+          <h2 className='forget'>Forget the Password?</h2>
+          <button type='onSubmit' className='lo' onClick={loginUser}>Sign in</button>
         </form>
         <div><h2>New to BloodGram?<a href='/signup'>Create an account</a></h2></div>
-        <button className='rese'>Forgot Password</button>
+        {/* <button className='rese'>Forgot Password</button> */}
       </div>
     </div>
   );
