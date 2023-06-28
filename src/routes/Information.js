@@ -4,6 +4,7 @@ import A from '../assets/366-3668869_blood-group-blood-and-blood-donation-a-drop
 import B from '../assets/b-blood.png';
 import O from '../assets/0-blood.png';
 import AOS from 'aos';
+import gif from '../assets/ezgif-3-ef1532785b.gif'
 import 'aos/dist/aos.css';
 
 function Information() {
@@ -133,7 +134,7 @@ function Information() {
           <li>The universal plasma donor has Type AB blood.</li>
         </ul>
         <div className='blood-trans'>
-        <img src="https://im3.ezgif.com/tmp/ezgif-3-ef1532785b.gif" alt="transfusionimg" />
+        <img src={gif} alt="transfusionimg" />
         </div>
       </div>
       <div className="take-part-donation">
