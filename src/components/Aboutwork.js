@@ -1,9 +1,14 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import Abouts from './Abouts';
 import './Aboutwork.css'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import pic from "../assets/blood2.jpeg"
 
 const Aboutwork = () => {
+  useEffect(() => {
+    AOS.init();
+  }, [])
   return (
     <div className='aboutmainpara'>
       <h1 className='bloodp'>BloodGram</h1>
@@ -21,11 +26,13 @@ const Aboutwork = () => {
       </div>
       <a href="/form" className='aboutcontact'> Contact Us</a>
       <div className='vission-mission'>
-        <div className='vission'>
+        <div className='vission'
+        data-aos="fade-up-right">
           <h1> Our vission</h1>
           <p>Our vision is to create a world where every individual understands the importance of blood donation and actively participates in saving lives. We envision a society where blood donation is easily accessible, and no life is lost due to the unavailability of blood.</p>
         </div>
-        <div className='mission'>
+        <div className='mission'
+        data-aos="fade-up-left">
           <h1> Our Mission</h1>
           <p>Our mission is to establish a comprehensive blood donation website that serves as a platform connecting blood donors, recipients, and blood banks. We aim to promote awareness about blood donation, streamline the donation process.
 

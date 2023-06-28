@@ -1,9 +1,9 @@
 import "./Signup.css";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { HiUser } from "react-icons/hi";
-import { AiOutlineMail, AiFillPhone } from "react-icons/ai";
-import { RiLockPasswordFill } from "react-icons/ri";
+// import { HiUser } from "react-icons/hi";
+// import { AiOutlineMail, AiFillPhone } from "react-icons/ai";
+// import { RiLockPasswordFill } from "react-icons/ri";
 import Navbar from './Navbar'
 export default function Signup() {
     const navigate = useNavigate();
@@ -102,10 +102,6 @@ export default function Signup() {
                                 onChange={handleInputs} />
                         </div>
                     </div>
-                    {/* <h1>
-                        Contact information:
-                        <hr />
-                    </h1> */}
                     <div className="additional-info">
 
                         <select

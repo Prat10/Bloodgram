@@ -2,12 +2,116 @@
     font-size: 5em;
     margin-top: 3rem;
 }
+.inform-img{
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-position: center;
+    background-image:
+    url('https://images.unsplash.com/photo-1503847752244-32e931070a43?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=795&q=80https://images.unsplash.com/photo-1503847752244-32e931070a43?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=795&q=80');
+    background-repeat: no-repeat;
+    /* filter: opacity(0.5) drop-shadow(0 0 red); */
+    background-size: 100%;
+    background-attachment: fixed;
+    background-position: center;
+}
+.main-tips h1{
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 700;
+}
+.main-tips h2{
+    font-size: 1.4rem;
+    font-weight: 300;
+    padding-top: 3rem;
+}
+.main-tips{
+    display: block;
+    margin-top: 10rem;
+    width: 100%;
+    height: 40rem;
+}
+.tips ul{
+    margin-left: 3rem;
+}
+.tips li{
+    font-size: 1.3rem;
+    margin-top: 4rem;
+    list-style: circle;
+    text-align: left;
+    font-family:inherit;
+    font-weight: 100;
+    padding-left: 2rem;
+}
+.tips h2{
+    font-size: 2em;
+    font-weight: 700;
+    /* font-family: Courier; */
+    border-bottom: 0.1em black solid;
+    opacity: 0.8;
+}
+.tips li{
+    font-family: "arial";
+    font-weight: 400;
+    
+}
+.subtip{
+    display: flex;
+    justify-content: space-around;
+}
+.tips{
+    background-color: white;
+    margin-top: 4rem;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+    width: 38rem;
+    height: 35rem;
+}
+.inform-img h1{
+    margin-top: 0;
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    font-family: "Bebas Neue";
+    font-style: normal;
+    font-weight: 700;
+    padding-top: 5rem;
+    text-shadow: none;
+    text-transform: capitalize;
+    line-height: 54px;
+    letter-spacing: 0px;
+    margin-bottom: 20px;
+}
+.blood-thought{
+    text-align: center;
+    padding-top: 10rem;
+    font-family: "Bebas Neue";
+    font-style: normal;
+    color: maroon;
+}
+.inform-img h2{
+    font-size: 3rem;
+    background-color:yellow;
+    opacity: 0.5;
+}
 
+.img-inside p{
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    text-transform: lowe;
+    padding-top: 4rem;
+    font-family: "Bebas Neue";
+    font-style: normal;
+}
 .inform-header {
     display: flex;
     max-width: 100%;
+    font-family: "Candara";;
+    position: sticky;
     /* font-family: 'Cabin', sans-serif; */
     /* background-color: blueviolet; */
+}
+.h1-blood{
+    font-family: monospace;
+    padding-top: 20rem;
 }
 
 .inform-header span {
@@ -25,8 +129,12 @@
     margin-top: 2%;
     text-align: left;
 }
+.blood-in-con h1{
+    font-family: "MonoSpace";
+}
 
 .inform-body {
+    font-family: "Candara";;
     font-size: 1.8em;
     padding-left: 20%;
     padding-right: 16%;
@@ -59,33 +167,57 @@
     transition: transform 0.8s;
     transform-style: preserve-3d;
 }
+/* .ab-blood {
+    height: 12rem;
+} */
 
 .inform-card-wrapper:hover .single-card {
     transform: rotateY(-180deg);
 }
 
-.front-inform img {
+.front-inform img{
+    /* border: #000 solid 0.3rem; */
+    border-radius: 50%;
+    /* box-shadow:  -3px 7px red,
+    2px 2px 5px rgba(94,104,121,0.288); */
+    
+}
+.front-inform .ab-blood{
+   
     background-size: cover;
     width: 9rem;
     height: 9rem;
+}
+.ab-bloods{
+    width: 10rem;
+    background-size: cover;
+    height: 10rem;
 }
 
 .back-inform p {
     font-size: 2rem;
 }
-
+.blood-trans{
+    margin-top: 8rem;
+    /* width: 80rem; */
+}
 .front-inform,
 .back-inform {
     position: absolute;
+    border-radius: 2rem;
+    color: #fff;
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-    backdrop-filter: red invert(75%);
-    background: linear-gradient(to bottom right, rgb(218, 218, 210), pink);
+    /* backdrop-filter: red invert(75%); */
+    background:maroon;
+}
+.front-inform span{
+    color: red;
 }
 
 .back-inform {
-    background: linear-gradient(to bottom right, rgb(255, 0, 85), rgb(24, 9, 78));
+   background-color: maroon;
     color: #fff;
     transform: rotateY(180deg);
 }
@@ -95,8 +227,13 @@
     padding-right: 23%;
     margin-top: 10rem;
 }
+.front-inform h1{
+    font-family: Garamond;
+    font-size: 3rem;
+}
 
 .blood-in-con p {
+    font-family: "Candara";
     font-size: 2rem;
     line-height: 2;
     text-align: left;
@@ -104,11 +241,13 @@
 }
 
 .blood-in-con img {
-    height: 60rem;
+    height: 40rem;
+    width: 60rem;
 }
 
 .blood-in-con ul {
     font-size: 2rem;
+    font-family: Optima;
     text-align: left;
 }
 
@@ -129,6 +268,16 @@
 
 .take-part-donation h2 {
     padding-top: 10rem;
+}
+.back-inform ul{
+    margin-top: 5rem;
+    
+}
+.back-inform li{
+    padding:1rem 0 0 1rem;
+    font-size: 1.2rem;
+    text-align: left;
+    font-family: "Candara";
 }
 
 .take-part-donation button {
@@ -151,4 +300,87 @@
     to {
         margin-left: 10%;
     }
+}
+@media screen and (max-width:769px){
+    .informs h1{
+        margin-top: 0;
+        font-size: 2em;
+    }
+    .inform-img{
+        height: 77vh;
+        width: auto;
+        justify-content: center;
+        align-items: center;
+        background-position: center;
+        background-image:
+        url('https://images.unsplash.com/photo-1503847752244-32e931070a43?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=795&q=80https://images.unsplash.com/photo-1503847752244-32e931070a43?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=795&q=80');
+        background-repeat: no-repeat;
+        /* filter: opacity(0.5) drop-shadow(0 0 red); */
+        background-size: auto;
+        padding-top: 0;
+        background-attachment: fixed;
+        background-position:top;
+    }  
+    .inform-img p{
+        font-size: 1.5rem;
+    }
+    .inform-img h2{
+        font-size: 2rem;
+    }
+    .main-tips{
+        display: block;
+        padding-top: 0;
+        margin-top: 0;
+        width: 100%;
+        height: 40rem;
+    }
+    .subtip {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        margin-left: 2rem;
+    }
+.h1-blood{
+    padding-top: 100rem;
+}
+.inform-header p{
+    font-size: 1.2em;
+    padding-left: 10%;
+    padding-right: 13%;
+}
+
+.inform-header span{
+    font-size: 1.3em;
+}
+.inform-body{
+    font-size: 1.3em;
+    padding-left: 10%;
+    padding-right: 11%;
+}
+.blood-in-con h1{
+    font-size: 2.2em;
+}
+.blood-in-con p{
+    font-size: 1em;
+}
+.blood-in-con{
+    /* background-color: aquamarine; */
+    padding-left: 5%;
+    justify-content: center;
+    align-items: center;
+    padding-right: 7%;
+}
+.blood-in-con ul {
+    font-size: 1rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: left;
+}
+.blood-trans img{
+    margin-top: 0;
+    width: 30rem;
+    height: auto;
+}
+.inform-card-wrapper {
+   display: none;
+}
 }

@@ -1,15 +1,59 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import './Information.css';
-// import '../components/DonateWork';
-// // import Navbar from '../components/Navbar';
-// import DonateWork from '../components/DonateWork';
-// // import Footer from '../components/Footer';
-// import DonateDataSet from '../components/DonateDataSet';
+import A from '../assets/366-3668869_blood-group-blood-and-blood-donation-a-drop.png';
+import B from '../assets/b-blood.png';
+import O from '../assets/0-blood.png';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function Information() {
+  useEffect(() => {
+    AOS.init();
+  }, [])
   return (
     <div className='informs'>
-      <h1>Facts About Blood and Blood Types</h1>
+     <div className='inform-img'>
+       <div className='img-inside'>
+       <h1>GLOBAL NEED</h1>
+       <p>In the Developed world, we take for granted<br/> that blood will be there for us if and<br/> when we need it</p>
+        <div className='blood-thought'><h2>"Blood is thicker than water,but loyalty is thicker than blood"</h2></div>
+       </div>
+     </div>
+    <div className='main-tips'>
+      <h1>Tips</h1>
+      <h2>Here are some tips to put your mind at ease during the <br/> blood donation process</h2>
+      <div className='subtip'>
+      <div className='tips'data-aos="fade-right"
+      data-aos-duration="2000">
+        <h2>The day before</h2>
+        <ul>
+          <li>Have an iron-rich diet such as beans, spinach or meat, poultry.</li>
+          <li>Have a proper sleep of at least 8 hours.</li>
+          <li>Include more liquids in your diet</li>
+        </ul>
+      </div>
+      <div className='tips'data-aos="fade-up"
+     data-aos-anchor-placement="top-center"
+     data-aos-duration="2000">
+      <h2>On the Donation day</h2>
+      <ul>
+          <li>Do carry your identify identification forms e.g.<br/> driver’s license</li>
+          <li>Drink 2 cups of water before donating blood</li>
+          <li>Wear a half sleeve shirt so that you can easily roll it <br/>up avoid fast food before donation</li>
+        </ul>
+      </div>
+      <div className='tips'data-aos="fade-left"
+      data-aos-duration="2000">
+      <h2>After the Donation</h2>
+      <ul>
+          <li>Reward yourself with a snack as refreshment immediately.</li>
+          <li>Drink more liquids over a period of 24 hour</li>
+          <li>Remove the bandage after few hours</li>
+        </ul>
+      </div>
+      </div>
+    </div>
+      <h1 className='h1-blood'>Facts About Blood and Blood Types</h1>
       <div className='inform-header'>
         <p>
           Blood types are determined by the presence or absence of certain antigens –
@@ -26,48 +70,56 @@ function Information() {
         <div className="inform-card-wrapper">
           <div className="single-card">
             <div className="front-inform">
-              <h1>Group</h1>
-              <img src='https://www.seekpng.com/png/full/364-3648208_blood-group-0-rh-factor-positive-blood-a.png' />
+              <h1><span>B</span> Group</h1>
+              <img className='ab-blood' src={B} />
             </div>
             <div className="back-inform">
-              <p>has only the A antigen on red
-                cells (and B antibody in the
-                plasma)</p>
+             <ul>
+                <li>It has only the B antigen on red cells</li>
+                <li>A antibody in the plasma</li>
+             </ul>
             </div>
           </div>
         </div>
         <div className="inform-card-wrapper">
           <div className="single-card">
             <div className="front-inform">
-              <h1>Group</h1>
-              <img src='https://www.seekpng.com/png/full/364-3648208_blood-group-0-rh-factor-positive-blood-a.png' />
+              <h1><span>AB</span> Group</h1>
+              <img className='ab-bloods' src="https://cdn.pixabay.com/photo/2017/08/22/11/56/blood-group-2668697_1280.png"/>
             </div>
             <div className="back-inform">
-              <h1>B+</h1>
+            <ul>
+                <li>It has both A and B antigens on red cells</li>
+                <li>Neither or nor antibody in the <br/>plasma</li>
+             </ul>
             </div>
           </div>
         </div>
         <div className="inform-card-wrapper">
           <div className="single-card">
             <div className="front-inform">
-              <h1>Group</h1>
-              <img src='https://www.seekpng.com/png/full/364-3648208_blood-group-0-rh-factor-positive-blood-a.png' />
+              <h1><span>A</span> Group</h1>
+              <img className='ab-blood' src={A} />
             </div>
             <div className="back-inform">
-              <p>has only the A antigen on red
-                cells (and B antibody in the
-                plasma)</p>
+            <ul>
+                <li>It has only the A antigen on red cells</li>
+                <li>B antibody in the plasma</li>
+             </ul>
             </div>
           </div>
         </div>
         <div className="inform-card-wrapper">
           <div className="single-card">
             <div className="front-inform">
-              <h1>Group</h1>
-              <img src='https://www.seekpng.com/png/full/364-3648208_blood-group-0-rh-factor-positive-blood-a.png' />
+              <h1><span>O</span> Group</h1>
+              <img className='ab-blood' src={O} />
             </div>
             <div className="back-inform">
-              <h1>B+</h1>
+            <ul>
+                <li>It has Neither or nor antigens on red cells</li>
+                <li>A and B antibody in the plasma</li>
+             </ul>
             </div>
           </div>
         </div>
@@ -80,8 +132,9 @@ function Information() {
           <li>The universal red cell donor has Type O negative blood.</li>
           <li>The universal plasma donor has Type AB blood.</li>
         </ul>
-        
-        <img src="https://nibts.hscni.net/wp-content/uploads/2017/06/bloodgroups-to-groups-768x522.png" alt="transfusionimg" />
+        <div className='blood-trans'>
+        <img src="https://im3.ezgif.com/tmp/ezgif-3-ef1532785b.gif" alt="transfusionimg" />
+        </div>
       </div>
       <div className="take-part-donation">
         <h2>Take Your Step To Bright Others Life</h2>

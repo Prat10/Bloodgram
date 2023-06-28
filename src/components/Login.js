@@ -54,7 +54,7 @@ function Login() {
           <h2 className='forget'>Forget the Password?</h2>
           <button type='onSubmit' className='lo' onClick={loginUser}>Sign in</button>
         </form>
-        <div><h2>New to BloodGram?<a href='/signup'>Create an account</a></h2></div>
+        <div><h2>New to BloodGram?<a href="/signup">Create an account</a></h2></div>
         {/* <button className='rese'>Forgot Password</button> */}
       </div>
     </div>

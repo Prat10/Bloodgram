@@ -1,10 +1,15 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import './Contact.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { useNavigate } from 'react-router-dom';
 import user_data from '../../src/redirect/List_of_user_set';
 import FilterUsers from '../../src/redirect/App'
 
 const Form = () => {
+  useEffect(() => {
+    AOS.init();
+  }, [])
   const [users, setUsers] = React.useState([])
 
   const navigate = useNavigate();
@@ -49,7 +54,8 @@ const Form = () => {
       <h1>
         <span className='bd-form'>C</span>heck Your City for Blood</h1>
       <form className='contact-form' onSubmit={filterItems}>
-        <div className='contact-inside'>
+        <div className='contact-inside'
+        data-aos-duration="2000" data-aos="fade-down-right" >
           <input
             value={formData.name}
             onChange={(e) => updateFormData(e)}
@@ -74,7 +80,8 @@ const Form = () => {
             <option>O-</option>
           </select>
         </div>
-        <div className='contact-inside'>
+        <div className='contact-inside' data-aos="fade-down-left"
+        data-aos-duration="2000" >
           {/* <label>Mobile Number</label> */}
           <input
             value={formData.number}
